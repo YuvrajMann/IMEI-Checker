@@ -1,6 +1,6 @@
 ## Setup Instructions
 
- 1. Clone the project to your local device using `git clone https://github.com`
+ 1. Clone the project to your local device using `git clone https://github.com/YuvrajMann/IMEI-Checker.git`
  
  2. Make sure node and npm are installed on your PC and are up to date
   

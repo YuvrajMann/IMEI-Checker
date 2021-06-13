@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Result</title><link rel="stylesheet" href='/stylesheets/style.css'></head>
+    <body id="check_body">
+        <% if(isValid){ %>
+            <h2><%=imeiNum%> is a valid IMEI Code</h2>
+          <% } else{ %>  
+            <h2><%=imeiNum%> is an invalid IMEI Code</h2>
+            <%if(ceilVal){%>
+                <h2>You can add <%=ceilVal%> to last digit to make IMEI num valid</h2>
+            <%} else if(floorVal){%>
+                <h2>You can add <%=floorVal%> to last digit to make IMEI num valid</h2>
+            <%}%> 
+         <% } %>
+         <footer>
+            <h3>Developed By - Yuvraj Mann</h3>
+        </footer>
+    </body>
+</html>

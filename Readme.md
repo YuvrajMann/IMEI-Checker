@@ -8,8 +8,8 @@
 4. Now run the command `npm start` to start the IMEI app server. By default app will run at port 3001
  *Note* - In case of any issues use command `SET DEBUG=nodeapp:* & npm start to debug any errors`)
 
-**You can paste the address http://localhost:3001 to view the app**
-**Note the 3001 will be replaced by the port at which you are running the server**
+*You can paste the address http://localhost:3001 to view the app*<br/>
+*Note the 3001 will be replaced by the port at which you are running the server*
 
 ## IMEI Checker Project
 

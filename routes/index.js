@@ -55,15 +55,15 @@ router.post('/checkImei',(req,res,next)=>{
         ceilVal=ceilVal-sum;
 
         let numToadd=-1;
-       
+        console.log(sum,ceilVal,floorVal);
         if((lastDig-floorVal)>=0){
-          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false,floorVal:floorVal});
+          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false,floorVal:floorVal,ceilVal:null});
         }
         else if((lastDig+ceilVal)<=9){
-          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false,ceilVal:ceilVal});
+          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false,ceilVal:ceilVal,floorVal:null});
         }
         else{
-          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false});
+          res.render('resultDisp',{imeiNum:req.body.imei,isValid:false,ceilVal:null,floorVal:null});
         }
       }
   }

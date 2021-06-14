@@ -6,10 +6,10 @@
             <h2><%=imeiNum%> is a valid IMEI Code</h2>
           <% } else{ %>  
             <h2><%=imeiNum%> is an invalid IMEI Code</h2>
-            <%if(ceilVal){%>
+            <%if(ceilVal!=null){%>
                 <h2>You can add <%=ceilVal%> to last digit to make IMEI num valid</h2>
-            <%} else if(floorVal){%>
-                <h2>You can add <%=floorVal%> to last digit to make IMEI num valid</h2>
+            <%} else if(floorVal!=null){%>
+                <h2>You can subtract <%=floorVal%> to last digit to make IMEI num valid</h2>
             <%}%> 
          <% } %>
          <footer>

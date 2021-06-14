@@ -4,7 +4,7 @@
  
  2. Make sure node and npm are installed on your PC and are up to date
   
-  3. Run the command `npm install` to install all dependencies
+  3. Move to project's root directory and run the command `npm install` to install all dependencies
 4. Now run the command `npm start` to start the IMEI app server. By default app will run at port 3001<br/>
  *Note* - In case of any issues use command `SET DEBUG=nodeapp:* & npm start` to debug any errors)
 
